@@ -1,0 +1,594 @@
+.bodyprincipal{
+    background-color: black;
+}
+.cont2{
+    background-color: rgb(71, 194, 243);
+    color: rgb(41, 39, 39);
+    text-shadow: 2px 2px 6px rgb(255, 249, 249);
+    display: grid;
+    font-family: 'Oswald', sans-serif;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "main main main"
+    "main main main"
+    "main main main"
+    "main main main"
+    "main main main"
+    "footer footer footer";
+    grid-template-rows:  repeat (auto-fill, 1fr);
+    height: 92vh;
+    font-size: 25px;
+}
+@media screen and (min-width: 400px) and (max-width: 650px){
+    .cont0 {
+        background-color: red;
+    }
+}
+@media screen and (min-width: 650px) and (max-width: 800px){
+    .cont0 {
+        background-color: green;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1200px){
+    .cont0{
+        background-color: blue;
+    }
+}
+@media screen and (min-width: 1200px){
+    .cont0{
+    background-color: rgb(71, 194, 243);
+    }
+}
+.grid-it0{
+    padding: 20px;
+    margin:20px ;
+}
+.grid0-header{ 
+    grid-area: header;
+    width: 100vw;
+    height: 10vh;
+    background:rgb(71, 194, 243) ;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 25px;
+    border: 5px solid rgb(22, 11, 63);
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    font-stretch: normal;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 8px #000;
+}
+.gri0-main{
+    width: 100vw;
+    text-align: center;
+}
+.grid0-footer{
+    grid-area: footer;
+    width: 100vw;
+    height: 300px;
+    background:rgb(71, 194, 243) ;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 8px #000;
+    border: 5px solid rgb(22, 11, 63);
+}
+.nav{
+    position: sticky;
+    top: 10px;
+}
+.menu{
+    max-width: 100vw;
+    background: rgb(26, 72, 87);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 5px solid rgb(147, 213, 240); 
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    font-stretch: normal;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 8px #000;
+    font-size: 20PX;
+}
+.menu li{
+    display: inline-block;
+    position: relative;
+}
+.menu li a{
+    padding: 10px 10px;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+.menu li a:hover{
+    background:#ccc ;
+    color: #000;
+}
+li{
+display: block;
+position: relative;
+}
+ul ul{
+position: absolute;
+display: none;
+}
+ul ul li{
+display: block;
+}
+ul li:hover ul {
+display: block;
+background:rgb(26, 72, 87);
+color: #000; 
+color: rgb(169, 180, 177);
+}
+@media only screen and (max-width: 800px) {
+}    
+.body1{
+    background-color: orange;
+}
+.cont1{
+    background-color: rgb(250, 213, 145);
+    color: rgb(41, 39, 39);
+    text-shadow: 2px 2px 6px rgb(255, 249, 249);
+    display: grid;
+    font-family: 'Oswald', sans-serif;
+    grid-template-areas: 
+    "header header header"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "footer footer footer";
+    grid-template-rows:  repeat (auto-fill, 1fr);
+    height: 92vh;
+    font-size: 20px;
+}
+@media screen and (min-width: 400px) and (max-width: 650px){
+    .cont1 {
+        background-color: red;
+    }
+}
+@media screen and (min-width: 650px) and (max-width: 800px){
+    .cont1 {
+        background-color: green;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1200px){
+    .cont1{
+        background-color: blue;
+    }
+}
+@media screen and (min-width: 1200px){
+    .cont1{
+    background-color: rgb(226, 171, 69);
+    }
+}
+.grid-it1{
+    padding: 20px;
+}
+.grid1-header{
+    grid-area: header;
+    color:rgb(83, 19, 19); 
+    font-family: 'Oswald', sans-serif;
+    width: 100vw;
+    height: 10vh;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid rgb(136, 13, 13); 
+}    
+.grid1-main{
+    background-color: rgb(233, 197, 131);
+    grid-area: main;
+    width: 50vw;
+    border: 2px solid rgb(136, 13, 13); 
+    text-align: center;
+}
+.grid1-aside{
+    background-color: rgb(212, 170, 90);
+    grid-area: aside;
+    width: 50vw;
+    border: 2px solid rgb(136, 13, 13);
+    text-align: center;
+}
+.grid1-footer{
+   background-color: rgb(185, 143, 64);
+   grid-area: footer;
+   text-align: center;
+   width: 100vw;
+   border: 2px solid rgb(136, 13, 13);
+}
+.h11{
+    color:rgb(83, 19, 19); 
+}
+.h21{
+    color: rgb(216, 33, 33);
+}
+.h31{
+    color: orangered;
+}
+
+     
+
+
+.body2{
+    background-color: rgb(194, 141, 26);
+}
+.cont2{
+    background-color: rgb(194, 141, 26);
+    color: rgb(41, 39, 39);
+    text-shadow: 2px 2px 6px rgb(255, 249, 249);
+    display: grid;
+    font-family: 'Oswald', sans-serif;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "main main main"
+    "main main main"
+    "main main main"
+    "main main main"
+    "main main main"
+    "footer footer footer";
+    grid-template-rows:  repeat (auto-fill, 1fr);
+    height: 92vh;
+    font-size: 20px;
+}
+@media screen and (min-width: 401px) and (max-width: 651px){
+    .cont2 {
+        background-color: rgb(0, 255, 55);
+    }
+}
+@media screen and (min-width: 651px) and (max-width: 801px){
+    .cont2 {
+        background-color: rgb(0, 113, 128);
+    }
+}
+@media screen and (min-width: 801px) and (max-width: 1201px){
+    .cont2{
+        background-color: rgb(255, 0, 0);
+    }
+}
+@media screen and (min-width: 1201px){
+    .cont2{
+    background-color:rgb(230, 173, 50);
+    }
+} 
+
+
+
+.grid-it2{
+    padding: 20px;
+    margin:20px ;
+}
+
+.grid2-header{
+    background-color: rgb(230, 173, 50);
+    grid-area: header;
+    width: 100vw;
+    height: 10vh;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid rgb(29, 22, 7);
+    color: rgb(71, 26, 8);
+}
+.grid2-main{
+    background-color: rgb(194, 141, 26);
+    grid-area: main;
+    border: 2px solid rgb(29, 22, 7); 
+    width: 100vw;
+    text-align: center;
+}
+.grid2-footer{
+    background-color: rgb(194, 141, 26);
+    grid-area: footer;
+    border: 5px solid rgb(29, 22, 7); 
+    width: 100vw;
+    text-align: center;
+}
+.h12{
+    color:rgb(71, 26, 8) ;
+}
+.h22{
+    color: rgb(105, 35, 7);
+}
+.h23{
+   color: rgb(141, 48, 11);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.body3{
+    background-color:rgb(24, 144, 144) ;
+}
+.He3{
+    color: rgb(8, 8, 51);
+    font-family: 'Oswald', sans-serif;
+}
+.h31{
+    color: rgb(8, 8, 51) ;
+}
+.h32{
+   color:rgb(15, 46, 75);
+}
+.h3{ color:rgb(15, 46, 75);}
+.h33{ color:rgb(15, 46, 75);}
+.h34{ color:rgb(15, 46, 75);
+}
+.h35{color:rgb(15, 46, 75);}
+.h36{color:rgb(15, 46, 75);}    
+.cont30{
+    background-color: rgb(24, 144, 144);
+    color: white;
+    text-shadow: 2px 2px 6px black;
+    display: grid;
+    font-family: 'Oswald', sans-serif;
+    grid-template-areas: 
+    "header header header"
+    "main main aside"
+    "main main aside"
+    "main main aside"
+    "main main aside"
+    "main main aside"
+    "main main aside"
+    "footer footer footer";
+    grid-template-rows:  repeat (auto-fill, 1fr);
+    height: 92vh;
+}
+@media screen and (min-width: 400px) and (max-width: 650px){
+    .cont30 {
+        background-color: red;
+    }
+}
+@media screen and (min-width: 650px) and (max-width: 800px){
+    .cont30 {
+        background-color: green;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1200px){
+    .cont30{
+        background-color: blue;
+    }
+}
+@media screen and (min-width: 1200px){
+    .cont30{
+    background-color: #21acac;
+    }
+}
+.grid-it30{
+    padding: 20px;
+}
+.grid3-header{
+    background-color: #21acac;
+    grid-area: header;
+    width: 101vw;
+    height: 10vh;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 2em;
+    border: 7px solid rgb(16, 85, 149); 
+}
+.grid3-main{
+   background-color: rgb(24, 144, 144);
+   grid-area: main;
+   width: 50vw;
+   border: 7px solid rgb(10, 66, 119); 
+   text-align: center;
+}
+.grid3-aside{
+    background-color: rgb(21, 133, 133);
+    grid-area: aside;
+    width: 50vw;
+    border: 7px solid rgb(9, 52, 92); 
+    text-align: center;
+}
+.grid3-footer{
+   background-color: rgb(20, 117, 117);
+   grid-area: footer;
+   text-align: center;
+   width: 101vw;
+   border: 7px solid rgb(9, 47, 83); 
+}
+
+
+
+.body4{
+    background-color:rgb(17, 121, 25) ;
+}
+.cont4{
+    color: white;
+    text-shadow: 2px 2px 6px black;
+    display: grid;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "main main main"
+    "main main main"
+    "main main main"
+    "main main main"
+    "main main main"
+    "footer footer footer";
+    grid-template-rows:  repeat (auto-fill, 1fr);
+    height: 92vh;
+    width: 100%;
+}
+@media screen and (min-width: 400px) and (max-width: 650px){
+    .cont4 {
+        background-color: red;
+    }
+}
+@media screen and (min-width: 650px) and (max-width: 800px){
+    .cont4 {
+        background-color: green;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1200px){
+    .cont4{
+        background-color: blue;
+    }
+}
+@media screen and (min-width: 1200px){
+    .cont4{
+    background-color: #10611d;
+    }
+}
+.grid-it40{
+    padding: 20px;
+    margin:20px ;
+}    
+.grid4-header{
+    background-color: #10611d;
+    grid-area: header;
+    width: 100vw;
+    height: 10vh;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 2em;
+    border: 5px solid rgb(23, 37, 14);
+}
+.grid4-main{
+    background-color: rgb(17, 121, 25);
+    grid-area: main;
+    width: 5vw;
+    border: 5px solid rgb(23, 37, 14); 
+    width: 100vw;
+    text-align: center;
+}
+.grid4-footer{
+    background-color: #10611d;
+    grid-area: footer;
+    text-align: center;
+    width: 100vw;
+    border: 5px solid rgb(23, 37, 14); 
+ }
+
+
+
+
+
+
+
+
+ .body5{
+    background-color:rgb(27, 26, 26) ;
+}
+.cont5{
+    color: white;
+    text-shadow: 2px 2px 6px black;
+    display: grid;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "main main main"
+    "main main main"
+    "main main main"
+    "main main main"
+    "main main main"
+    "footer footer footer";
+    grid-template-rows:  repeat (auto-fill, 1fr);
+    height: 92vh;
+    width: 100%;
+}
+@media screen and (min-width: 400px) and (max-width: 650px){
+    .cont5 {
+        background-color: red;
+    }
+}
+@media screen and (min-width: 650px) and (max-width: 800px){
+    .cont5 {
+        background-color: green;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1200px){
+    .cont5{
+        background-color: blue;
+    }
+}
+@media screen and (min-width: 1200px){
+    .cont5{
+    background-color: rgb(27, 26, 26);
+    }
+}
+.grid-it5{
+    padding: 20px;
+    margin:20px ;
+}
+
+.grid5-header{
+    background-color: solid rgb(27, 26, 26);
+    color: yellowgreen;
+    grid-area: header;
+    width: 100vw;
+    height: 10vh;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 3em;
+    border: 2px solid whitesmoke;
+}
+.grid5-main{
+    background-color: rgb(51, 48, 48);
+    grid-area: main;
+    width: 5vw;
+    border: 2px solid whitesmoke; 
+    width: 100vw;
+    text-align: center;
+}
+.grid5-footer{
+    background-color: rgb(27, 26, 26);
+    grid-area: footer;
+    text-align: center;
+    width: 100vw;
+    height: 100px;
+    border: 2px solid whitesmoke; 
+ }
+ .h51{
+     color: wheat;
+     font-size: 2em;
+ }
+.h52{
+    color: springgreen;
+}
+.h53{
+    color: teal;
+}
+.h54{
+    color: tomato;
+}    
